@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | My Bank</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Contact Us Page Styles */
+    .contact-container {
+      max-width: 800px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .form-container input, .form-container textarea {
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .form-container button {
+      padding: 12px;
+      background-color: #0077b6;
+      color: white;
+      font-size: 1em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .form-container button:hover {
+      background-color: #005f8b;
+    }
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #0077b6;
+      font-weight: bold;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <p>If you have any questions or need assistance, feel free to contact us!</p>
+  </header>
+
+  <div class="contact-container">
+    <form id="contactForm" class="form-container">
+      <input type="text" id="contactName" placeholder="Your Name" required />
+      <input type="email" id="contactEmail" placeholder="Your Email" required />
+      <textarea id="contactMessage" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <a href="index.html" class="back-link">Back to Home</a>
+
+  <!-- <script>document.getElementById('contactForm')?.addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent form submission
+    
+    // Capture form data
+    const name = document.getElementById('contactName').value.trim();
+    const email = document.getElementById('contactEmail').value.trim();
+    const message = document.getElementById('contactMessage').value.trim();
+  
+    // Validate inputs
+    if (name === "" || email === "" || message === "") {
+      alert("Please fill in all fields.");
+      return;
+    }
+  
+    // Here you can send the data to a server or process it as needed
+    // For now, let's log it to the console
+    console.log("Contact Form Submitted:");
+    console.log("Name:", name);
+    console.log("Email:", email);
+    console.log("Message:", message);
+  
+    // Optionally, show a confirmation message
+    alert("Your message has been sent successfully! We'll get back to you soon.");
+  
+    // Reset the form after submission
+    e.target.reset();
+  });
+  </script> -->
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Account Details | My Bank</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to right, #0077b6, #0096c7);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2em;
+    }
+    .table-container {
+      max-width: 800px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table thead {
+      background-color: #0077b6;
+      color: white;
+    }
+    table th, table td {
+      text-align: left;
+      padding: 12px 15px;
+    }
+    table tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    table tbody tr:hover {
+      background-color: #f1f1f1;
+    }
+    table th {
+        background-color: #333;
+      font-size: 1em;
+      font-weight: bold;
+    }
+    table td {
+      font-size: 0.9em;
+    }
+    .back-link {
+      display: block;
+      text-align: center;
+      margin: 20px 0;
+      text-decoration: none;
+      color: #0077b6;
+      font-weight: bold;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      background: #333;
+      color: white;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>All Account Details</h1>
+  </header>
+
+  <div class="table-container">
+    <table id="detailsTable">
+      <thead>
+        <tr>
+          <th>Account Name</th>
+          <th>Balance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Populated by JavaScript -->
+      </tbody>
+    </table>
+  </div>
+  
+  <a href="index.html" class="back-link">Back to Home</a>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>

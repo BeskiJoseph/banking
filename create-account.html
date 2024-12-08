@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account | My Bank</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to right, #0077b6, #0096c7);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2em;
+    }
+    .form-container {
+      max-width: 500px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0077b6;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    form input {
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      padding: 10px;
+      background: #0077b6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #005f8a;
+    }
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #0077b6;
+      font-weight: bold;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      background: #333;
+      color: white;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Create Your Account</h1>
+  </header>
+
+  <div class="form-container">
+    <h2>Open a New Account</h2>
+    <form id="createAccountForm">
+      <input type="text" id="accountName" placeholder="Enter Account Name" required />
+      <input type="number" id="initialDeposit" placeholder="Enter Initial Deposit" required />
+      <button type="submit">Create Account</button>
+    </form>
+    <a href="index.html" class="back-link">Back to Home</a>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
